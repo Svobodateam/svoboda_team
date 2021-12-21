@@ -26,7 +26,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout_7">
         <item row="1" column="2">
-         <spacer name="spacer_right_base_balance">
+         <spacer name="spacer_rightBaseBalance">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -42,7 +42,7 @@
          </spacer>
         </item>
         <item row="0" column="1">
-         <spacer name="spacer_top_base_balance">
+         <spacer name="spacer_topBaseBalance">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
@@ -58,7 +58,7 @@
          </spacer>
         </item>
         <item row="1" column="0">
-         <spacer name="spacer_left_base_balance">
+         <spacer name="spacer_leftBaseBalance">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -74,9 +74,9 @@
          </spacer>
         </item>
         <item row="1" column="1">
-         <layout class="QGridLayout" name="grid_base_balance">
+         <layout class="QGridLayout" name="grid_baseBalance">
           <item row="1" column="3">
-           <spacer name="spacer_top_refresh">
+           <spacer name="spacer_topRefresh">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -94,7 +94,7 @@
           <item row="0" column="0" colspan="4">
            <layout class="QGridLayout" name="grid_balances">
             <item row="1" column="0">
-             <spacer name="spacer_v_u_v">
+             <spacer name="spacer_VacationUnpaidVacation">
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
@@ -110,9 +110,9 @@
              </spacer>
             </item>
             <item row="2" column="0">
-             <layout class="QGridLayout" name="grid_u_vacation">
+             <layout class="QGridLayout" name="grid_unpaidVacation">
               <item row="0" column="1">
-               <widget class="QLineEdit" name="edit_uVacation">
+               <widget class="QLineEdit" name="edit_unpaidVacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -128,7 +128,7 @@
                </widget>
               </item>
               <item row="0" column="0">
-               <widget class="QLabel" name="lbl_uVacation">
+               <widget class="QLabel" name="lbl_unpaidVacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -155,7 +155,7 @@
              </layout>
             </item>
             <item row="3" column="0">
-             <spacer name="spacer_u_v_s">
+             <spacer name="spacer_unpaidVacationSicknes">
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
@@ -261,7 +261,7 @@
              </layout>
             </item>
             <item row="5" column="0">
-             <spacer name="spacer_s_70ps">
+             <spacer name="spacer_sickness70Pct">
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
@@ -324,7 +324,7 @@
            </layout>
           </item>
           <item row="5" column="4">
-           <spacer name="spacer_right_refresh">
+           <spacer name="spacer_rightRefresh">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -359,7 +359,7 @@
            </widget>
           </item>
           <item row="5" column="0" colspan="3">
-           <spacer name="spacer_left_refresh">
+           <spacer name="spacer_leftRefresh">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -377,7 +377,7 @@
          </layout>
         </item>
         <item row="2" column="1">
-         <spacer name="spacer_bottom_base_balance">
+         <spacer name="spacer_bottomBaseBalance">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
