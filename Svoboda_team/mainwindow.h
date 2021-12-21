@@ -19,7 +19,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void setTheme(QAction *action);
 
     void on_actionAqua_triggered();
 
