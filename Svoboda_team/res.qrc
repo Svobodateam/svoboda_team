@@ -2,5 +2,11 @@
     <qresource prefix="/">
         <file>Diffnes.qss</file>
         <file>Medize.qss</file>
+        <file>aqua.qss</file>
+        <file>blue.qss</file>
+        <file>integrid.qss</file>
+        <file>macOS.qss</file>
+        <file>ubuntu.qss</file>
+        <file>windows_bg.jpg</file>
     </qresource>
 </RCC>
