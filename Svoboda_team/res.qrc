@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/Themes">
+    <qresource prefix="/themes">
         <file>Diffnes.qss</file>
         <file>Medize.qss</file>
     </qresource>
