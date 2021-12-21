@@ -5,5 +5,6 @@
         <file>integrid.qss</file>
         <file>macOS.qss</file>
         <file>ubuntu.qss</file>
+        <file>windows_bg.jpg</file>
     </qresource>
 </RCC>
