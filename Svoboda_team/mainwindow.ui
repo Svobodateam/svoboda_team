@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>725</width>
-    <height>485</height>
+    <width>919</width>
+    <height>759</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_balances">
        <attribute name="title">
@@ -26,7 +26,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout_7">
         <item row="1" column="2">
-         <spacer name="horizontalSpacer_7">
+         <spacer name="spacer_right_base_balance">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -42,7 +42,7 @@
          </spacer>
         </item>
         <item row="0" column="1">
-         <spacer name="verticalSpacer_3">
+         <spacer name="spacer_top_base_balance">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
@@ -58,7 +58,7 @@
          </spacer>
         </item>
         <item row="1" column="0">
-         <spacer name="horizontalSpacer_6">
+         <spacer name="spacer_left_base_balance">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -74,9 +74,9 @@
          </spacer>
         </item>
         <item row="1" column="1">
-         <layout class="QGridLayout" name="gridLayout_6">
+         <layout class="QGridLayout" name="grid_base_balance">
           <item row="1" column="3">
-           <spacer name="verticalSpacer_6">
+           <spacer name="spacer_top_refresh">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -92,9 +92,9 @@
            </spacer>
           </item>
           <item row="0" column="0" colspan="4">
-           <layout class="QGridLayout" name="gridLayout_5">
+           <layout class="QGridLayout" name="grid_balances">
             <item row="1" column="0">
-             <spacer name="verticalSpacer">
+             <spacer name="spacer_v_u_v">
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
@@ -110,9 +110,9 @@
              </spacer>
             </item>
             <item row="2" column="0">
-             <layout class="QGridLayout" name="gridLayout_2">
+             <layout class="QGridLayout" name="grid_u_vacation">
               <item row="0" column="1">
-               <widget class="QLineEdit" name="lineEdit_2">
+               <widget class="QLineEdit" name="le_u_vacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -128,7 +128,7 @@
                </widget>
               </item>
               <item row="0" column="0">
-               <widget class="QLabel" name="label_2">
+               <widget class="QLabel" name="lbl_u_vacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -148,14 +148,14 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Unpaid Vacation</string>
                 </property>
                </widget>
               </item>
              </layout>
             </item>
             <item row="3" column="0">
-             <spacer name="verticalSpacer_2">
+             <spacer name="spacer_u_v_s">
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
@@ -171,9 +171,9 @@
              </spacer>
             </item>
             <item row="0" column="0">
-             <layout class="QGridLayout" name="gridLayout">
+             <layout class="QGridLayout" name="grid_vacation">
               <item row="2" column="0">
-               <widget class="QLabel" name="label">
+               <widget class="QLabel" name="lbl_vacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -193,12 +193,12 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>Vavation</string>
+                 <string>Vacation</string>
                 </property>
                </widget>
               </item>
               <item row="2" column="1">
-               <widget class="QLineEdit" name="lineEdit">
+               <widget class="QLineEdit" name="le_vacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -216,9 +216,9 @@
              </layout>
             </item>
             <item row="6" column="0">
-             <layout class="QGridLayout" name="gridLayout_4">
+             <layout class="QGridLayout" name="grid_70_pct_sickness">
               <item row="0" column="0">
-               <widget class="QLabel" name="label_4">
+               <widget class="QLabel" name="lbl_70_pct_sickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -238,12 +238,12 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>70% Sickness</string>
                 </property>
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QLineEdit" name="lineEdit_4">
+               <widget class="QLineEdit" name="le_70_pct_sickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -261,7 +261,7 @@
              </layout>
             </item>
             <item row="5" column="0">
-             <spacer name="verticalSpacer_4">
+             <spacer name="spacer_s_70ps">
               <property name="orientation">
                <enum>Qt::Vertical</enum>
               </property>
@@ -277,9 +277,9 @@
              </spacer>
             </item>
             <item row="4" column="0">
-             <layout class="QGridLayout" name="gridLayout_3">
+             <layout class="QGridLayout" name="grid_sickness">
               <item row="0" column="0">
-               <widget class="QLabel" name="label_3">
+               <widget class="QLabel" name="lbl_sickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -299,12 +299,12 @@
                  </size>
                 </property>
                 <property name="text">
-                 <string>TextLabel</string>
+                 <string>Sickness</string>
                 </property>
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QLineEdit" name="lineEdit_3">
+               <widget class="QLineEdit" name="le_sickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -324,7 +324,7 @@
            </layout>
           </item>
           <item row="5" column="4">
-           <spacer name="horizontalSpacer_2">
+           <spacer name="spacer_right_refresh">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -340,7 +340,7 @@
            </spacer>
           </item>
           <item row="5" column="3">
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="btn_refresh">
             <property name="minimumSize">
              <size>
               <width>60</width>
@@ -359,7 +359,7 @@
            </widget>
           </item>
           <item row="5" column="0" colspan="3">
-           <spacer name="horizontalSpacer">
+           <spacer name="spacer_left_refresh">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -377,7 +377,7 @@
          </layout>
         </item>
         <item row="2" column="1">
-         <spacer name="verticalSpacer_5">
+         <spacer name="spacer_bottom_base_balance">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
@@ -398,35 +398,85 @@
        <attribute name="title">
         <string>Requests</string>
        </attribute>
-       <widget class="QWidget" name="layoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>811</width>
-          <height>551</height>
-         </rect>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_9">
-         <item row="0" column="1">
-          <widget class="QPushButton" name="pushButton_2">
-           <property name="text">
-            <string>Request Absence</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="text">
-            <string>Request Sickness</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0" rowspan="2">
-          <widget class="QCalendarWidget" name="calendarWidget"/>
-         </item>
-        </layout>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="1">
+         <spacer name="spacer_top_base_request">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>260</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="1" rowspan="2">
+         <layout class="QGridLayout" name="grid_base_request">
+          <item row="0" column="0" rowspan="3">
+           <widget class="QCalendarWidget" name="calendar">
+            <property name="gridVisible">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btn_req_ansence">
+            <property name="text">
+             <string>Request Absence</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="btn_req_sickness">
+            <property name="text">
+             <string>Request Sickness</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="2">
+         <spacer name="spacer_right_base_request">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>240</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <spacer name="spacer_left_base_request">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>241</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="1">
+         <spacer name="spaacer_bottom_base_request">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>260</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>
