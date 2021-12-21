@@ -18,7 +18,7 @@
     <item row="0" column="0">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_balances">
        <attribute name="title">
@@ -112,7 +112,7 @@
             <item row="2" column="0">
              <layout class="QGridLayout" name="grid_u_vacation">
               <item row="0" column="1">
-               <widget class="QLineEdit" name="le_u_vacation">
+               <widget class="QLineEdit" name="edit_uVacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -128,7 +128,7 @@
                </widget>
               </item>
               <item row="0" column="0">
-               <widget class="QLabel" name="lbl_u_vacation">
+               <widget class="QLabel" name="lbl_uVacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -198,7 +198,7 @@
                </widget>
               </item>
               <item row="2" column="1">
-               <widget class="QLineEdit" name="le_vacation">
+               <widget class="QLineEdit" name="edit_vacation">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -216,9 +216,9 @@
              </layout>
             </item>
             <item row="6" column="0">
-             <layout class="QGridLayout" name="grid_70_pct_sickness">
+             <layout class="QGridLayout" name="grid_70PctSickness">
               <item row="0" column="0">
-               <widget class="QLabel" name="lbl_70_pct_sickness">
+               <widget class="QLabel" name="lbl_70PctSickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
                   <horstretch>0</horstretch>
@@ -243,7 +243,7 @@
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QLineEdit" name="le_70_pct_sickness">
+               <widget class="QLineEdit" name="edit_70PctSickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -304,7 +304,7 @@
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="QLineEdit" name="le_sickness">
+               <widget class="QLineEdit" name="edit_sickness">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -400,7 +400,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout_10">
         <item row="0" column="1">
-         <spacer name="spacer_top_base_request">
+         <spacer name="spacer_topBaseRequest">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
@@ -413,7 +413,7 @@
          </spacer>
         </item>
         <item row="1" column="1" rowspan="2">
-         <layout class="QGridLayout" name="grid_base_request">
+         <layout class="QGridLayout" name="grid_baseRequest">
           <item row="0" column="0" rowspan="3">
            <widget class="QCalendarWidget" name="calendar">
             <property name="gridVisible">
@@ -422,14 +422,14 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QPushButton" name="btn_req_ansence">
+           <widget class="QPushButton" name="btn_reqAbsence">
             <property name="text">
              <string>Request Absence</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QPushButton" name="btn_req_sickness">
+           <widget class="QPushButton" name="btn_reqSickness">
             <property name="text">
              <string>Request Sickness</string>
             </property>
@@ -438,7 +438,7 @@
          </layout>
         </item>
         <item row="1" column="2">
-         <spacer name="spacer_right_base_request">
+         <spacer name="spacer_rightBaseRequest">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -451,7 +451,7 @@
          </spacer>
         </item>
         <item row="2" column="0">
-         <spacer name="spacer_left_base_request">
+         <spacer name="spacer_leftBaseRequest">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -464,7 +464,7 @@
          </spacer>
         </item>
         <item row="3" column="1">
-         <spacer name="spaacer_bottom_base_request">
+         <spacer name="spacer_bottomBaseRequest">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
