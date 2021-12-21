@@ -28,7 +28,7 @@ MainWindow::~MainWindow() {
 
 void MainWindow::on_actionDiffnes_triggered()
 {
-    QFile file(":/Themes/Diffnes.qss");
+    QFile file(":/themes/Diffnes.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
@@ -38,7 +38,7 @@ void MainWindow::on_actionDiffnes_triggered()
 
 void MainWindow::on_actionMedize_triggered()
 {
-    QFile file(":/Themes/Medize.qss");
+    QFile file(":/themes/Medize.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
