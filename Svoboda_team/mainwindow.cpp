@@ -7,8 +7,19 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+      
+    setupMenuBar();
+}
 
-    on_actionAqua_triggered();
+void MainWindow::setupMenuBar()
+{
+    actionGroup = new QActionGroup(this);
+
+    actionGroup->setExclusive(true);
+    ui->menuTheme->actions().first()->setChecked(true);
+    for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
+        actionGroup->addAction(ui->menuTheme->actions()[i]);
+    }
 }
 
 MainWindow::~MainWindow()
@@ -16,29 +27,21 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_actionAqua_triggered()
+void MainWindow::on_actionDiffnes_triggered()
 {
-    QFile file(":/aqua.qss");
+    QFile file(":/Diffnes.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
 }
 
-void MainWindow::on_actionBlue_triggered()
+void MainWindow::on_actionMedize_triggered()
 {
-    QFile file(":/blue.qss");
+    QFile file(":/Medize.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
 }
 
-void MainWindow::on_actionmacOS_triggered()
-{
-    QFile file(":/macOS.qss");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
-
-    ui->widget->setStyleSheet(styleSheet);
-}

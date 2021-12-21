@@ -2,8 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
 #include <QDebug>
+#include <QActionGroup>
 
 #include "dbmanager.h"
 
@@ -21,15 +21,16 @@ public:
 
 private slots:
 
-    void on_actionAqua_triggered();
+    void on_actionDiffnes_triggered();
 
-    void on_actionBlue_triggered();
-
-    void on_actionmacOS_triggered();
+    void on_actionMedize_triggered();
 
 private:
     Ui::MainWindow *ui;
     DBManager* m_dbManager;
+    QActionGroup *actionGroup;
+
+    void setupMenuBar();
 };
 
 #endif // MAINWINDOW_H
