@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include <QFile>
+
 namespace Ui {
 class MainWindow;
 }
@@ -14,6 +16,15 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private slots:
+    void setTheme(QAction *action);
+
+    void on_actionAqua_triggered();
+
+    void on_actionBlue_triggered();
+
+    void on_actionmacOS_triggered();
 
 private:
     Ui::MainWindow *ui;
