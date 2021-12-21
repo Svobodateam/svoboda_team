@@ -29,17 +29,16 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionDiffnes_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/Diffnes.qss");
+    QFile file(":/Diffnes.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
 }
 
-
 void MainWindow::on_actionMedize_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/Medize.qss");
+    QFile file(":/Medize.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
