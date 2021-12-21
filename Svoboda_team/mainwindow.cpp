@@ -7,21 +7,24 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/aqua.qss");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
+    setupMenuBar();
+}
 
-    ui->widget->setStyleSheet(styleSheet);
+void MainWindow::setupMenuBar()
+{
+    actionGroup = new QActionGroup(this);
+
+    actionGroup->setExclusive(true);
+    ui->menuTheme->actions().first()->setChecked(true);
+    for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
+        actionGroup->addAction(ui->menuTheme->actions()[i]);
+    }
+    on_actionAqua_triggered();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
-
-void MainWindow::setTheme(QAction *action)
-{
-    qDebug() << action->text();
 }
 
 void MainWindow::on_actionAqua_triggered()

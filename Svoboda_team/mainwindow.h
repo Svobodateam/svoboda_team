@@ -4,6 +4,8 @@
 #include <QMainWindow>
 
 #include <QFile>
+#include <QDebug>
+#include <QActionGroup>
 
 namespace Ui {
 class MainWindow;
@@ -18,7 +20,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void setTheme(QAction *action);
 
     void on_actionAqua_triggered();
 
@@ -28,6 +29,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QActionGroup *actionGroup;
+
+    void setupMenuBar();
 };
 
 #endif // MAINWINDOW_H

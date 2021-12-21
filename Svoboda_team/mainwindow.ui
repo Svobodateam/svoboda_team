@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>919</width>
+    <width>692</width>
     <height>759</height>
    </rect>
   </property>
@@ -508,6 +508,9 @@
    <addaction name="menuActions"/>
   </widget>
   <action name="actionAqua">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="checked">
     <bool>false</bool>
    </property>
@@ -516,6 +519,9 @@
    </property>
   </action>
   <action name="actionBlue">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="checked">
     <bool>false</bool>
    </property>
@@ -524,6 +530,9 @@
    </property>
   </action>
   <action name="actionmacOS">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="checked">
     <bool>false</bool>
    </property>
