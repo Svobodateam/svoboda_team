@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Svoboda tracker</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/images/svoboda.jpg</normaloff>:/images/svoboda.jpg</iconset>
   </property>
   <widget class="QWidget" name="widget">
    <layout class="QGridLayout" name="gridLayout_8">
@@ -536,6 +540,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

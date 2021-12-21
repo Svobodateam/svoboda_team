@@ -20,6 +20,7 @@ void MainWindow::setupMenuBar()
     for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
         actionGroup->addAction(ui->menuTheme->actions()[i]);
     }
+    on_actionDiffnes_triggered();
 }
 
 MainWindow::~MainWindow()
@@ -29,7 +30,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionDiffnes_triggered()
 {
-    QFile file(":/Diffnes.qss");
+    QFile file(":/Themes/Diffnes.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
@@ -38,7 +39,7 @@ void MainWindow::on_actionDiffnes_triggered()
 
 void MainWindow::on_actionMedize_triggered()
 {
-    QFile file(":/Medize.qss");
+    QFile file(":/Themes/Medize.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 

@@ -1,6 +1,9 @@
 <RCC>
-    <qresource prefix="/">
+    <qresource prefix="/Themes">
         <file>Diffnes.qss</file>
         <file>Medize.qss</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>svoboda.jpg</file>
     </qresource>
 </RCC>
