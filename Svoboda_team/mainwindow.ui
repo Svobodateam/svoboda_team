@@ -482,6 +482,55 @@
     </item>
    </layout>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>692</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuActions">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <widget class="QMenu" name="menuTheme">
+     <property name="title">
+      <string>Theme</string>
+     </property>
+     <addaction name="actionAqua"/>
+     <addaction name="actionBlue"/>
+     <addaction name="actionmacOS"/>
+    </widget>
+    <addaction name="menuTheme"/>
+   </widget>
+   <addaction name="menuActions"/>
+  </widget>
+  <action name="actionAqua">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Aqua</string>
+   </property>
+  </action>
+  <action name="actionBlue">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Blue</string>
+   </property>
+  </action>
+  <action name="actionmacOS">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>macOS</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
