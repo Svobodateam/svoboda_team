@@ -499,15 +499,14 @@
      <property name="title">
       <string>Theme</string>
      </property>
-     <addaction name="actionAqua"/>
-     <addaction name="actionBlue"/>
-     <addaction name="actionmacOS"/>
+     <addaction name="actionDiffnes"/>
+     <addaction name="actionMedize"/>
     </widget>
     <addaction name="menuTheme"/>
    </widget>
    <addaction name="menuActions"/>
   </widget>
-  <action name="actionAqua">
+  <action name="actionDiffnes">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -515,10 +514,13 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>Aqua</string>
+    <string>Diffnes</string>
+   </property>
+   <property name="toolTip">
+    <string>Diffnes</string>
    </property>
   </action>
-  <action name="actionBlue">
+  <action name="actionMedize">
    <property name="checkable">
     <bool>true</bool>
    </property>
@@ -526,18 +528,10 @@
     <bool>false</bool>
    </property>
    <property name="text">
-    <string>Blue</string>
+    <string>Medize</string>
    </property>
-  </action>
-  <action name="actionmacOS">
-   <property name="checkable">
-    <bool>true</bool>
-   </property>
-   <property name="checked">
-    <bool>false</bool>
-   </property>
-   <property name="text">
-    <string>macOS</string>
+   <property name="toolTip">
+    <string>Medize</string>
    </property>
   </action>
  </widget>

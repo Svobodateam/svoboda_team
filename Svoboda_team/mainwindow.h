@@ -21,11 +21,9 @@ public:
 
 private slots:
 
-    void on_actionAqua_triggered();
+    void on_actionDiffnes_triggered();
 
-    void on_actionBlue_triggered();
-
-    void on_actionmacOS_triggered();
+    void on_actionMedize_triggered();
 
 private:
     Ui::MainWindow *ui;

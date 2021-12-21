@@ -19,7 +19,7 @@ void MainWindow::setupMenuBar()
     for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
         actionGroup->addAction(ui->menuTheme->actions()[i]);
     }
-    on_actionAqua_triggered();
+    on_actionDiffnes_triggered();
 }
 
 MainWindow::~MainWindow()
@@ -27,29 +27,22 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_actionAqua_triggered()
+void MainWindow::on_actionDiffnes_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/aqua.qss");
+    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/Diffnes.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
 }
 
-void MainWindow::on_actionBlue_triggered()
+
+void MainWindow::on_actionMedize_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/blue.qss");
+    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/Medize.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
 }
 
-void MainWindow::on_actionmacOS_triggered()
-{
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/macOS.qss");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
-
-    ui->widget->setStyleSheet(styleSheet);
-}
