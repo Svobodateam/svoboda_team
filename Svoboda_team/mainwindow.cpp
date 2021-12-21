@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+      
     setupMenuBar();
 }
 
@@ -35,7 +35,6 @@ void MainWindow::on_actionDiffnes_triggered()
 
     ui->widget->setStyleSheet(styleSheet);
 }
-
 
 void MainWindow::on_actionMedize_triggered()
 {
