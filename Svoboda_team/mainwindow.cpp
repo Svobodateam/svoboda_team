@@ -4,17 +4,15 @@
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     m_dbManager(new DBManager()),
-    ui(new Ui::MainWindow)
-{
+    ui(new Ui::MainWindow) {
+
     ui->setupUi(this);
-      
     setupMenuBar();
 }
 
-void MainWindow::setupMenuBar()
-{
-    actionGroup = new QActionGroup(this);
+void MainWindow::setupMenuBar() {
 
+    actionGroup = new QActionGroup(this);
     actionGroup->setExclusive(true);
     ui->menuTheme->actions().first()->setChecked(true);
     for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
@@ -23,8 +21,8 @@ void MainWindow::setupMenuBar()
     on_actionDiffnes_triggered();
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
+    delete m_dbManager;
     delete ui;
 }
 
@@ -35,6 +33,7 @@ void MainWindow::on_actionDiffnes_triggered()
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
+    file.close();
 }
 
 void MainWindow::on_actionMedize_triggered()
@@ -44,5 +43,6 @@ void MainWindow::on_actionMedize_triggered()
     QString styleSheet = QLatin1String(file.readAll());
 
     ui->widget->setStyleSheet(styleSheet);
+    file.close();
 }
 
