@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>aqua.qss</file>
+        <file>blue.qss</file>
+        <file>integrid.qss</file>
+        <file>macOS.qss</file>
+        <file>ubuntu.qss</file>
+    </qresource>
+</RCC>

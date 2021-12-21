@@ -7,11 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/aqua.qss");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
-
-    ui->widget->setStyleSheet(styleSheet);
+    on_actionAqua_triggered();
 }
 
 MainWindow::~MainWindow()
@@ -21,7 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_actionAqua_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/aqua.qss");
+    QFile file(":/aqua.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
@@ -30,7 +26,7 @@ void MainWindow::on_actionAqua_triggered()
 
 void MainWindow::on_actionBlue_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/blue.qss");
+    QFile file(":/blue.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
@@ -39,7 +35,7 @@ void MainWindow::on_actionBlue_triggered()
 
 void MainWindow::on_actionmacOS_triggered()
 {
-    QFile file("D:/AgileProj/svoboda_team/Svoboda_team/macOS.qss");
+    QFile file(":/macOS.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
 
