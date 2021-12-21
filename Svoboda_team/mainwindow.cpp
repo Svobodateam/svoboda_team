@@ -19,7 +19,6 @@ void MainWindow::setupMenuBar()
     for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
         actionGroup->addAction(ui->menuTheme->actions()[i]);
     }
-    on_actionDiffnes_triggered();
 }
 
 MainWindow::~MainWindow()
