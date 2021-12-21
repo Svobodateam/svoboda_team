@@ -19,11 +19,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::setTheme(QAction *action)
-{
-    qDebug() << action->text();
-}
-
 void MainWindow::on_actionAqua_triggered()
 {
     QFile file("D:/AgileProj/svoboda_team/Svoboda_team/aqua.qss");
