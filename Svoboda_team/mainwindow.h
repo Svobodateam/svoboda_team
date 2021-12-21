@@ -2,9 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
-#include <QFile>
+#include <QDebug>
 #include <QActionGroup>
+
+#include "dbmanager.h"
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +27,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    DBManager* m_dbManager;
     QActionGroup *actionGroup;
 
     void setupMenuBar();
