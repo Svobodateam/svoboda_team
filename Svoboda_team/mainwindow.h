@@ -4,7 +4,8 @@
 #include <QMainWindow>
 
 #include <QDebug>
-#include <QFile>
+
+#include "dbmanager.h"
 
 namespace Ui {
 class MainWindow;
@@ -28,6 +29,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    DBManager* m_dbManager;
 };
 
 #endif // MAINWINDOW_H
