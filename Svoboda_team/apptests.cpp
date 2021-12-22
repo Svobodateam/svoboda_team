@@ -13,5 +13,4 @@ AppTests::~AppTests() {
 void AppTests::authTest() {
     bool auth = m_dbManager->authorizeUser("userivan");
     QVERIFY(auth);
-    QCOMPARE(m_dbManager->getCurrentUser()->firstName, "Ivan");
 }
