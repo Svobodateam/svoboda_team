@@ -7,4 +7,7 @@
         <file>svoboda.jpg</file>
         <file>windows_bg.jpg</file>
     </qresource>
+    <qresource prefix="/icons">
+        <file>refresh_black_48dp.svg</file>
+    </qresource>
 </RCC>
