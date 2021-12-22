@@ -6,6 +6,7 @@
     <qresource prefix="/images">
         <file>svoboda.jpg</file>
         <file>windows_bg.jpg</file>
+        <file>normal_bg.jpg</file>
     </qresource>
     <qresource prefix="/icons">
         <file>refresh_black_48dp.svg</file>

@@ -23,6 +23,7 @@
      <widget class="QTabWidget" name="tab_base">
       <property name="font">
        <font>
+        <family>Yu Gothic UI Semibold</family>
         <pointsize>10</pointsize>
        </font>
       </property>
@@ -43,7 +44,7 @@
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image: url(:/images/windows_bg.jpg);</string>
+        <string notr="true">border-image: url(:/images/normal_bg.jpg);</string>
        </property>
        <attribute name="title">
         <string>Authorization</string>
@@ -119,6 +120,7 @@
             </property>
             <property name="font">
              <font>
+              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -155,6 +157,7 @@
             </property>
             <property name="font">
              <font>
+              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -185,6 +188,7 @@
             </property>
             <property name="font">
              <font>
+              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -664,67 +668,6 @@ color: rgb(255, 0, 0);</string>
         </item>
         <item row="1" column="1" rowspan="2">
          <layout class="QGridLayout" name="grid_baseRequest">
-          <item row="1" column="2">
-           <widget class="QPushButton" name="btn_reqAbsence">
-            <property name="minimumSize">
-             <size>
-              <width>180</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>180</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>15</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Request Absence</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0" rowspan="3">
-           <widget class="QCalendarWidget" name="calendar_endDate">
-            <property name="gridVisible">
-             <bool>true</bool>
-            </property>
-            <property name="selectionMode">
-             <enum>QCalendarWidget::SingleSelection</enum>
-            </property>
-            <property name="verticalHeaderFormat">
-             <enum>QCalendarWidget::NoVerticalHeader</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLabel" name="lbl_endDate">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>15</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>End Date</string>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="1" rowspan="3">
            <widget class="QCalendarWidget" name="calendar_startDate">
             <property name="firstDayOfWeek">
@@ -741,7 +684,48 @@ color: rgb(255, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
+          <item row="0" column="1" alignment="Qt::AlignHCenter">
+           <widget class="QLabel" name="lbl_endDate">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Yu Gothic UI Semibold</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>End Date</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" rowspan="3">
+           <widget class="QCalendarWidget" name="calendar_endDate">
+            <property name="gridVisible">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QCalendarWidget::SingleSelection</enum>
+            </property>
+            <property name="verticalHeaderFormat">
+             <enum>QCalendarWidget::NoVerticalHeader</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" alignment="Qt::AlignHCenter">
            <widget class="QLabel" name="lbl_startDate">
             <property name="minimumSize">
              <size>
@@ -757,6 +741,7 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
+              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -781,6 +766,7 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
+              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -789,24 +775,57 @@ color: rgb(255, 0, 0);</string>
             </property>
            </widget>
           </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="btn_reqAbsence">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Yu Gothic UI Semibold</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Request Absence</string>
+            </property>
+           </widget>
+          </item>
           <item row="3" column="2">
            <layout class="QHBoxLayout" name="horiz_daysCount">
             <item>
              <widget class="QLabel" name="lbl_daysSelected">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="font">
                <font>
+                <family>Yu Gothic UI Semibold</family>
                 <pointsize>15</pointsize>
                </font>
               </property>
               <property name="text">
                <string>Days selected:</string>
               </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
              </widget>
             </item>
-            <item>
+            <item alignment="Qt::AlignHCenter">
              <widget class="QLabel" name="lbl_daysSelectedCount">
               <property name="font">
                <font>
+                <family>Yu Gothic UI Semibold</family>
                 <pointsize>15</pointsize>
                </font>
               </property>
@@ -852,6 +871,11 @@ color: rgb(255, 0, 0);</string>
      <string>Menu</string>
     </property>
     <widget class="QMenu" name="menuTheme">
+     <property name="font">
+      <font>
+       <family>Yu Gothic UI Semibold</family>
+      </font>
+     </property>
      <property name="title">
       <string>Theme</string>
      </property>
