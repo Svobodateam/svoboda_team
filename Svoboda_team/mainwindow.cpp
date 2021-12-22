@@ -107,6 +107,21 @@ void MainWindow::updateDaysCount() {
     ui->lbl_daysSelectedCount->setText(QString::number(m_selectedDaysCount));
 }
 
+void MainWindow::updateSickness(LeaveType type) {
+
+    m_dbManager->refreshLeaveCount();
+    int daysAvailable = m_dbManager->getCurrentUser()->leavesCount[type];
+    if (daysAvailable >= m_selectedDaysCount) {
+        m_dbManager->updateLeaveCount(type, daysAvailable - m_selectedDaysCount);
+        ui->lbl_errorMessageText->clear();
+    } else {
+        ui->lbl_errorMessageText->setText(QString("Your balance is lower than expectations, sorry :)"));
+    }
+
+    ui->calendar_startDate->setSelectedDate(QDate::currentDate());
+    ui->calendar_endDate->setSelectedDate(QDate::currentDate());
+}
+
 void MainWindow::on_btn_login_clicked() {
 
     ui->lbl_error->clear();
@@ -119,7 +134,7 @@ void MainWindow::on_btn_login_clicked() {
 
 void MainWindow::on_tab_base_currentChanged(int index) {
 
-    if (ui->tab_base->indexOf(ui->tab_requests) == index) {
+    if (ui->tab_base->indexOf(ui->tab_balances) == index) {
         on_btn_refresh_clicked();
     }
 }
@@ -146,14 +161,23 @@ void MainWindow::on_calendar_startDate_selectionChanged() {
 
 void MainWindow::on_btn_reqAbsence_clicked() {
 
-    m_dbManager->refreshLeaveCount();
-    int daysAvailable = m_dbManager->getCurrentUser()->leavesCount[LeaveType::Vacation];
-    if (daysAvailable >= m_selectedDaysCount) {
-        m_dbManager->updateLeaveCount(LeaveType::Vacation, daysAvailable - m_selectedDaysCount);
-    } else {
-
-    }
-
-    ui->calendar_startDate->setSelectedDate(QDate::currentDate());
-    ui->calendar_endDate->setSelectedDate(QDate::currentDate());
+    updateSickness(LeaveType::Vacation);
 }
+
+void MainWindow::on_btn_reqUnpaidAbsence_clicked() {
+
+    updateSickness(LeaveType::UnpaidVacation);
+}
+
+
+void MainWindow::on_btn_reqSickness_clicked() {
+
+    updateSickness(LeaveType::Sickness100);
+}
+
+
+void MainWindow::on_btn_req70PctSickness_clicked() {
+
+    updateSickness(LeaveType::Sickness75);
+}
+

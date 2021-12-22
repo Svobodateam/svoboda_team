@@ -41,6 +41,12 @@ private slots:
 
     void on_btn_reqAbsence_clicked();
 
+    void on_btn_reqUnpaidAbsence_clicked();
+
+    void on_btn_reqSickness_clicked();
+
+    void on_btn_req70PctSickness_clicked();
+
 private:
     DBManager* m_dbManager;
     Ui::MainWindow *ui;
@@ -53,6 +59,7 @@ private:
     void authSuccessful();
     void showLoginScreen();
     void updateDaysCount();
+    void updateSickness(LeaveType);
 };
 
 #endif // MAINWINDOW_H
