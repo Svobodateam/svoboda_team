@@ -9,8 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setupMenuBar();
 
-    m_hiddenTabs.push_back(ui->tab_balances);
     m_hiddenTabs.push_back(ui->tab_requests);
+    m_hiddenTabs.push_back(ui->tab_balances);
     ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_balances));
     ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_requests));
 }
@@ -75,6 +75,8 @@ void MainWindow::authSuccessful() {
     m_hiddenTabs.removeLast();
     m_hiddenTabs.push_back(ui->tab_auth);
     ui->tab_base->removeTab(0);
+
+    on_btn_refresh_clicked();
 }
 
 void MainWindow::on_btn_login_clicked() {
