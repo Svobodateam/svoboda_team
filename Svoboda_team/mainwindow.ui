@@ -897,7 +897,7 @@ color: rgb(255, 0, 0);</string>
     <string>Login</string>
    </property>
   </action>
-  <action name="actionLog_out">
+  <action name="actionLogout">
    <property name="text">
     <string>Logout</string>
    </property>
