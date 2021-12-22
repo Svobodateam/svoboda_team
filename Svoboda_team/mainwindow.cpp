@@ -8,6 +8,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     setupMenuBar();
+
+    m_hiddenTabs.push_back(ui->tab_balances);
+    m_hiddenTabs.push_back(ui->tab_requests);
+    ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_balances));
+    ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_requests));
 }
 
 void MainWindow::setupMenuBar() {
@@ -46,3 +51,45 @@ void MainWindow::on_actionMedize_triggered()
     file.close();
 }
 
+
+void MainWindow::on_btn_refresh_clicked() {
+
+    m_dbManager->refreshLeaveCount();
+    fillTextEdits();
+}
+
+void MainWindow::fillTextEdits() {
+
+    User* user = m_dbManager->getCurrentUser();
+    ui->edit_vacation->setText(QString::number(user->leavesCount[LeaveType::Vacation]));
+    ui->edit_unpaidVacation->setText(QString::number(user->leavesCount[LeaveType::UnpaidVacation]));
+    ui->edit_sickness->setText(QString::number(user->leavesCount[LeaveType::Sickness100]));
+    ui->edit_70PctSickness->setText(QString::number(user->leavesCount[LeaveType::Sickness75]));
+}
+
+void MainWindow::authSuccessful() {
+
+    ui->tab_base->insertTab(3, m_hiddenTabs.last(), "Balances");
+    m_hiddenTabs.removeLast();
+    ui->tab_base->insertTab(3, m_hiddenTabs.last(), "Requests");
+    m_hiddenTabs.removeLast();
+    m_hiddenTabs.push_back(ui->tab_auth);
+    ui->tab_base->removeTab(0);
+}
+
+void MainWindow::on_btn_login_clicked() {
+
+    ui->lbl_error->clear();
+    if (!m_dbManager->authorizeUser(ui->edit_username->text())) {
+        ui->lbl_error->setText("User is unavailable! Try another username.");
+        return;
+    }
+    authSuccessful();
+}
+
+void MainWindow::on_tab_base_currentChanged(int index) {
+
+    if (ui->tab_base->indexOf(ui->tab_requests) == index) {
+        on_btn_refresh_clicked();
+    }
+}

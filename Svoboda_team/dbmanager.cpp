@@ -55,6 +55,11 @@ QMap<LeaveType, int> DBManager::retrieveLeaveCount() {
     return result;
 }
 
+void DBManager::refreshLeaveCount() {
+
+    m_currentUser->leavesCount = retrieveLeaveCount();
+}
+
 bool DBManager::updateLeaveCount(LeaveType type, int newValue) {
 
     QString colName = leaveTypeToStr(type);
