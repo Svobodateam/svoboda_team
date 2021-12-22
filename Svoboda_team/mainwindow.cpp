@@ -8,11 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     setupMenuBar();
-
-    m_hiddenTabs.push_back(ui->tab_requests);
-    m_hiddenTabs.push_back(ui->tab_balances);
-    ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_balances));
-    ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_requests));
+    showLoginScreen();
 }
 
 void MainWindow::setupMenuBar() {
@@ -27,12 +23,13 @@ void MainWindow::setupMenuBar() {
 }
 
 MainWindow::~MainWindow() {
+
     delete m_dbManager;
     delete ui;
 }
 
-void MainWindow::on_actionDiffnes_triggered()
-{
+void MainWindow::on_actionDiffnes_triggered() {
+
     QFile file(":/themes/diffnes.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
@@ -41,8 +38,8 @@ void MainWindow::on_actionDiffnes_triggered()
     file.close();
 }
 
-void MainWindow::on_actionMedize_triggered()
-{
+void MainWindow::on_actionMedize_triggered() {
+
     QFile file(":/themes/medize.qss");
     file.open(QFile::ReadOnly);
     QString styleSheet = QLatin1String(file.readAll());
@@ -69,14 +66,36 @@ void MainWindow::fillTextEdits() {
 
 void MainWindow::authSuccessful() {
 
+    ui->edit_username->clear();
+
+    ui->actionLogin->setVisible(false);
+    ui->actionLogout->setVisible(true);
+
     ui->tab_base->insertTab(3, m_hiddenTabs.last(), "Balances");
     m_hiddenTabs.removeLast();
     ui->tab_base->insertTab(3, m_hiddenTabs.last(), "Requests");
     m_hiddenTabs.removeLast();
+
     m_hiddenTabs.push_back(ui->tab_auth);
     ui->tab_base->removeTab(0);
 
     on_btn_refresh_clicked();
+}
+
+void MainWindow::showLoginScreen() {
+
+    ui->actionLogin->setVisible(true);
+    ui->actionLogout->setVisible(false);
+
+    m_hiddenTabs.push_back(ui->tab_auth);
+    ui->tab_base->insertTab(0, m_hiddenTabs.last(), "Authorization");
+    m_hiddenTabs.removeLast();
+
+    m_hiddenTabs.push_back(ui->tab_requests);
+    m_hiddenTabs.push_back(ui->tab_balances);
+
+    ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_balances));
+    ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_requests));
 }
 
 void MainWindow::on_btn_login_clicked() {
@@ -94,4 +113,14 @@ void MainWindow::on_tab_base_currentChanged(int index) {
     if (ui->tab_base->indexOf(ui->tab_requests) == index) {
         on_btn_refresh_clicked();
     }
+}
+
+void MainWindow::on_actionLogin_triggered() {
+
+    on_btn_login_clicked();
+}
+
+void MainWindow::on_actionLogout_triggered() {
+
+    showLoginScreen();
 }

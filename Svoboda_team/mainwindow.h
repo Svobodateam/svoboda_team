@@ -31,6 +31,10 @@ private slots:
 
     void on_tab_base_currentChanged(int index);
 
+    void on_actionLogin_triggered();
+
+    void on_actionLogout_triggered();
+
 private:
     DBManager* m_dbManager;
     Ui::MainWindow *ui;
@@ -40,6 +44,7 @@ private:
     void setupMenuBar();
     void fillTextEdits();
     void authSuccessful();
+    void showLoginScreen();
 };
 
 #endif // MAINWINDOW_H
