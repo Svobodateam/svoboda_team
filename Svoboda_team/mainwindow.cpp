@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setupMenuBar();
     showLoginScreen();
+    updateDaysCount();
 }
 
 void MainWindow::setupMenuBar() {
@@ -104,7 +105,7 @@ void MainWindow::updateDaysCount() {
     QDate startDate = ui->calendar_startDate->selectedDate();
     QDate endDate = ui->calendar_endDate->selectedDate();
 
-    m_selectedDaysCount = startDate.daysTo(endDate);
+    m_selectedDaysCount = startDate.daysTo(endDate) + 1;
     ui->lbl_daysSelectedCount->setText(QString::number(m_selectedDaysCount));
 }
 
