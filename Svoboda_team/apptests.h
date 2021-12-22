@@ -15,6 +15,9 @@ private:
 private slots:
     void authTest();
     void userFieldsTest();
+    void setCurrentUserTest();
+    void updateLeaveCountTest();
+    void retrieveLeaveCountTest();
     void testSessionActive();
 };
 
