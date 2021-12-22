@@ -1,15 +1,10 @@
 <RCC>
     <qresource prefix="/themes">
-        <file>Diffnes.qss</file>
-        <file>Medize.qss</file>
-        <file>aqua.qss</file>
-        <file>blue.qss</file>
-        <file>integrid.qss</file>
-        <file>macOS.qss</file>
-        <file>ubuntu.qss</file>
-        <file>windows_bg.jpg</file>
+        <file>diffnes.qss</file>
+        <file>medize.qss</file>
     </qresource>
     <qresource prefix="/images">
         <file>svoboda.jpg</file>
+        <file>windows_bg.jpg</file>
     </qresource>
 </RCC>
