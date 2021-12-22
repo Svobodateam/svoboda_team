@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>919</width>
+    <width>948</width>
     <height>759</height>
    </rect>
   </property>
@@ -21,10 +21,16 @@
    <layout class="QGridLayout" name="gridLayout_8">
     <item row="0" column="1">
      <widget class="QTabWidget" name="tab_base">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="font">
        <font>
         <family>Yu Gothic UI Semibold</family>
-        <pointsize>10</pointsize>
+        <pointsize>15</pointsize>
        </font>
       </property>
       <property name="toolTip">
@@ -325,11 +331,23 @@ color: rgb(255, 0, 0);</string>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>16777215</height>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="readOnly">
                  <bool>true</bool>
@@ -346,15 +364,21 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>0</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>100</width>
-                  <height>16777215</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>Unpaid Vacation</string>
@@ -391,15 +415,21 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>0</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>100</width>
-                  <height>16777215</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>Vacation</string>
@@ -414,11 +444,23 @@ color: rgb(255, 0, 0);</string>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>16777215</height>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="readOnly">
                  <bool>true</bool>
@@ -439,15 +481,21 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>0</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>100</width>
-                  <height>16777215</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>70% Sickness</string>
@@ -462,11 +510,23 @@ color: rgb(255, 0, 0);</string>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>16777215</height>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="readOnly">
                  <bool>true</bool>
@@ -503,15 +563,21 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>0</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>100</width>
-                  <height>16777215</height>
+                  <width>180</width>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>Sickness</string>
@@ -526,11 +592,23 @@ color: rgb(255, 0, 0);</string>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>35</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>16777215</height>
+                  <height>35</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Yu Gothic UI Semibold</family>
+                  <pointsize>15</pointsize>
+                 </font>
                 </property>
                 <property name="readOnly">
                  <bool>true</bool>
@@ -916,7 +994,7 @@ color: rgb(255, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>919</width>
+     <width>948</width>
      <height>20</height>
     </rect>
    </property>
