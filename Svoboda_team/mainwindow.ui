@@ -327,6 +327,9 @@ color: rgb(255, 0, 0);</string>
                   <height>16777215</height>
                  </size>
                 </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
                </widget>
               </item>
               <item row="0" column="0">
@@ -413,6 +416,9 @@ color: rgb(255, 0, 0);</string>
                   <height>16777215</height>
                  </size>
                 </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
                </widget>
               </item>
              </layout>
@@ -457,6 +463,9 @@ color: rgb(255, 0, 0);</string>
                   <width>500</width>
                   <height>16777215</height>
                  </size>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -518,6 +527,9 @@ color: rgb(255, 0, 0);</string>
                   <width>500</width>
                   <height>16777215</height>
                  </size>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
                 </property>
                </widget>
               </item>
@@ -832,7 +844,7 @@ color: rgb(255, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>919</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuActions">
