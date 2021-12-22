@@ -15,6 +15,7 @@ private:
 private slots:
     void authTest();
     void userFieldsTest();
+    void testSessionActive();
 };
 
 #endif // APPTESTS_H
