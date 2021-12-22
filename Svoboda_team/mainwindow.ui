@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>948</width>
+    <width>1104</width>
     <height>759</height>
    </rect>
   </property>
@@ -29,7 +29,6 @@
       </property>
       <property name="font">
        <font>
-        <family>Yu Gothic UI Semibold</family>
         <pointsize>15</pointsize>
        </font>
       </property>
@@ -126,7 +125,6 @@
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -163,7 +161,6 @@
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -194,7 +191,6 @@
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -345,7 +341,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -376,7 +371,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -427,7 +421,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -458,7 +451,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -493,7 +485,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -524,7 +515,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -575,7 +565,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -606,7 +595,6 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <family>Yu Gothic UI Semibold</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -736,7 +724,6 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -761,7 +748,6 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -798,7 +784,6 @@ color: rgb(255, 0, 0);</string>
               </property>
               <property name="font">
                <font>
-                <family>Yu Gothic UI Semibold</family>
                 <pointsize>15</pointsize>
                </font>
               </property>
@@ -814,7 +799,6 @@ color: rgb(255, 0, 0);</string>
              <widget class="QLabel" name="lbl_daysSelectedCount">
               <property name="font">
                <font>
-                <family>Yu Gothic UI Semibold</family>
                 <pointsize>15</pointsize>
                </font>
               </property>
@@ -845,7 +829,6 @@ color: rgb(255, 0, 0);</string>
            <widget class="QPushButton" name="btn_req70PctSickness">
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -870,7 +853,6 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -883,7 +865,6 @@ color: rgb(255, 0, 0);</string>
            <widget class="QPushButton" name="btn_reqUnpaidAbsence">
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -908,7 +889,6 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
-              <family>Yu Gothic UI Semibold</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -974,12 +954,14 @@ color: rgb(255, 0, 0);</string>
           </property>
           <property name="font">
            <font>
-            <family>Yu Gothic UI Semibold</family>
             <pointsize>13</pointsize>
            </font>
           </property>
           <property name="text">
            <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -994,8 +976,8 @@ color: rgb(255, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>948</width>
-     <height>20</height>
+     <width>1104</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuActions">
@@ -1004,9 +986,7 @@ color: rgb(255, 0, 0);</string>
     </property>
     <widget class="QMenu" name="menuTheme">
      <property name="font">
-      <font>
-       <family>Yu Gothic UI Semibold</family>
-      </font>
+      <font/>
      </property>
      <property name="title">
       <string>Theme</string>

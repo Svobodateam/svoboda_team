@@ -15,7 +15,7 @@ void MainWindow::setupMenuBar() {
 
     actionGroup = new QActionGroup(this);
     actionGroup->setExclusive(true);
-    ui->menuTheme->actions().first()->setChecked(true);
+    ui->menuTheme->actions().value(0)->setChecked(true);
     for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
         actionGroup->addAction(ui->menuTheme->actions()[i]);
     }
@@ -67,6 +67,7 @@ void MainWindow::fillTextEdits() {
 void MainWindow::authSuccessful() {
 
     ui->edit_username->clear();
+    ui->lbl_error->clear();
 
     ui->actionLogin->setVisible(false);
     ui->actionLogout->setVisible(true);
@@ -109,6 +110,10 @@ void MainWindow::updateDaysCount() {
 
 void MainWindow::updateSickness(LeaveType type) {
 
+    if (m_selectedDaysCount < 0) {
+        ui->lbl_errorMessageText->setText(QString("Your choice is really weird, you know? Please choose another date"));
+        return;
+    }
     m_dbManager->refreshLeaveCount();
     int daysAvailable = m_dbManager->getCurrentUser()->leavesCount[type];
     if (daysAvailable >= m_selectedDaysCount) {
@@ -179,5 +184,12 @@ void MainWindow::on_btn_reqSickness_clicked() {
 void MainWindow::on_btn_req70PctSickness_clicked() {
 
     updateSickness(LeaveType::Sickness75);
+}
+
+void MainWindow::keyPressEvent(QKeyEvent *event) {
+
+    if (event->key() == Qt::Key_Return) {
+        ui->btn_login->click();
+    }
 }
 

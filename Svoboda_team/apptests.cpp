@@ -34,14 +34,14 @@ void AppTests::setCurrentUserTest()
     User *tmpUser = new User;
     tmpUser->id = 1;
     tmpUser->leavesCount = tmpLeave;
-    tmpUser->userName = "usergoga";
-    tmpUser->firstName = "Goga";
+    tmpUser->userName = "userroman";
+    tmpUser->firstName = "Roman";
     tmpUser->lastName = "Tuputia";
     tmpUser->role = "Juggernaut";
 
     m_dbManager->setCurrentUser(tmpUser);
-    QCOMPARE(m_dbManager->getCurrentUser()->userName, "usergoga");
-    QCOMPARE(m_dbManager->getCurrentUser()->firstName, "Goga");
+    QCOMPARE(m_dbManager->getCurrentUser()->userName, "userroman");
+    QCOMPARE(m_dbManager->getCurrentUser()->firstName, "Roman");
     QCOMPARE(m_dbManager->getCurrentUser()->lastName, "Tuputia");
     QCOMPARE(m_dbManager->getCurrentUser()->role, "Juggernaut");
 }
@@ -64,3 +64,7 @@ void AppTests::retrieveLeaveCountTest()
     QCOMPARE(m_dbManager->getCurrentUser()->role, "designer");
 }
 
+void AppTests::testSessionActive() {
+    m_dbManager->authorizeUser("userivan");
+    QCOMPARE(m_dbManager->getSessionActive(), true);
+}

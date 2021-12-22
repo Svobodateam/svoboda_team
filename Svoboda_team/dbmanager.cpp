@@ -133,3 +133,6 @@ bool DBManager::authorizeUser(QString username) {
     return true;
 }
 
+bool DBManager::getSessionActive() {
+    return m_isSessionActive;
+}
