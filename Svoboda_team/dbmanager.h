@@ -33,6 +33,7 @@ public:
     ~DBManager();
     bool startup();
     QMap <LeaveType, int> retrieveLeaveCount();
+    void refreshLeaveCount();
     bool updateLeaveCount(LeaveType, int);
     User* getCurrentUser();
     void setCurrentUser(User*);
