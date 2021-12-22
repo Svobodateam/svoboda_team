@@ -15,3 +15,11 @@ void AppTests::authTest() {
     QVERIFY(auth);
     QCOMPARE(m_dbManager->getCurrentUser()->firstName, "Ivan");
 }
+
+void AppTests::userFieldsTest() {
+    m_dbManager->authorizeUser("userivan");
+    QCOMPARE(m_dbManager->getCurrentUser()->userName, "userivan");
+    QCOMPARE(m_dbManager->getCurrentUser()->firstName, "Ivan");
+    QCOMPARE(m_dbManager->getCurrentUser()->lastName, "Ivanov");
+    QCOMPARE(m_dbManager->getCurrentUser()->role, "designer");
+}
