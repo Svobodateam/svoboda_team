@@ -190,6 +190,10 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
 
     if (event->key() == Qt::Key_Return) {
         ui->btn_login->click();
+    } else if (event->key() == Qt::Key_F12) {
+        ui->tab_auth->setStyleSheet("border-image: url(:/images/windows_bg.png);");
+    } else if (event->key() == Qt::Key_F11) {
+        ui->tab_auth->setStyleSheet("border-image: url(:/images/windows_normal_bg.jpg);");
     }
 }
 
