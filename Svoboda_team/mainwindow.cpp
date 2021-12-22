@@ -98,6 +98,15 @@ void MainWindow::showLoginScreen() {
     ui->tab_base->removeTab(ui->tab_base->indexOf(ui->tab_requests));
 }
 
+void MainWindow::updateDaysCount() {
+
+    QDate startDate = ui->calendar_startDate->selectedDate();
+    QDate endDate = ui->calendar_endDate->selectedDate();
+
+    m_selectedDaysCount = startDate.daysTo(endDate);
+    ui->lbl_daysSelectedCount->setText(QString::number(m_selectedDaysCount));
+}
+
 void MainWindow::on_btn_login_clicked() {
 
     ui->lbl_error->clear();
@@ -123,4 +132,28 @@ void MainWindow::on_actionLogin_triggered() {
 void MainWindow::on_actionLogout_triggered() {
 
     showLoginScreen();
+}
+
+void MainWindow::on_calendar_endDate_selectionChanged() {
+
+    updateDaysCount();
+}
+
+void MainWindow::on_calendar_startDate_selectionChanged() {
+
+    updateDaysCount();
+}
+
+void MainWindow::on_btn_reqAbsence_clicked() {
+
+    m_dbManager->refreshLeaveCount();
+    int daysAvailable = m_dbManager->getCurrentUser()->leavesCount[LeaveType::Vacation];
+    if (daysAvailable >= m_selectedDaysCount) {
+        m_dbManager->updateLeaveCount(LeaveType::Vacation, daysAvailable - m_selectedDaysCount);
+    } else {
+
+    }
+
+    ui->calendar_startDate->setSelectedDate(QDate::currentDate());
+    ui->calendar_endDate->setSelectedDate(QDate::currentDate());
 }
