@@ -860,7 +860,7 @@ color: rgb(255, 0, 0);</string>
     </widget>
     <addaction name="menuTheme"/>
     <addaction name="actionLogin"/>
-    <addaction name="actionLog_out"/>
+    <addaction name="actionLogout"/>
    </widget>
    <addaction name="menuActions"/>
   </widget>
