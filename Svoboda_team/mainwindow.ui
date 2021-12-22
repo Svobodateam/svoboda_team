@@ -36,7 +36,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_auth">
        <property name="autoFillBackground">
@@ -849,7 +849,7 @@ color: rgb(255, 0, 0);</string>
    </property>
    <widget class="QMenu" name="menuActions">
     <property name="title">
-     <string>Actions</string>
+     <string>Menu</string>
     </property>
     <widget class="QMenu" name="menuTheme">
      <property name="title">
@@ -859,6 +859,8 @@ color: rgb(255, 0, 0);</string>
      <addaction name="actionMedize"/>
     </widget>
     <addaction name="menuTheme"/>
+    <addaction name="actionLogin"/>
+    <addaction name="actionLog_out"/>
    </widget>
    <addaction name="menuActions"/>
   </widget>
@@ -888,6 +890,16 @@ color: rgb(255, 0, 0);</string>
    </property>
    <property name="toolTip">
     <string>Medize</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionLog_out">
+   <property name="text">
+    <string>Log out</string>
    </property>
   </action>
  </widget>
