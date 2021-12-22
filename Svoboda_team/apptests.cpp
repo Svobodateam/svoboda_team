@@ -22,3 +22,8 @@ void AppTests::userFieldsTest() {
     QCOMPARE(m_dbManager->getCurrentUser()->lastName, "Ivanov");
     QCOMPARE(m_dbManager->getCurrentUser()->role, "designer");
 }
+
+void AppTests::testSessionActive() {
+    m_dbManager->authorizeUser("userivan");
+    QCOMPARE(m_dbManager->getSessionActive(), true);
+}
