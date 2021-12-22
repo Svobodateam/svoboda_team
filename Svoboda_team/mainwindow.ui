@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>919</width>
+    <width>948</width>
     <height>759</height>
    </rect>
   </property>
@@ -340,7 +340,7 @@ color: rgb(255, 0, 0);</string>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>34</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="font">
@@ -453,7 +453,7 @@ color: rgb(255, 0, 0);</string>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>34</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="font">
@@ -519,7 +519,7 @@ color: rgb(255, 0, 0);</string>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>34</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="font">
@@ -601,7 +601,7 @@ color: rgb(255, 0, 0);</string>
                 <property name="maximumSize">
                  <size>
                   <width>500</width>
-                  <height>34</height>
+                  <height>35</height>
                  </size>
                 </property>
                 <property name="font">
@@ -994,7 +994,7 @@ color: rgb(255, 0, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>919</width>
+     <width>948</width>
      <height>20</height>
     </rect>
    </property>
