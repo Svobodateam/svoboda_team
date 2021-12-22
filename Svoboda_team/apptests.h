@@ -14,6 +14,7 @@ private:
     DBManager* m_dbManager;
 private slots:
     void authTest();
+    void userFieldsTest();
 };
 
 #endif // APPTESTS_H
