@@ -110,6 +110,10 @@ void MainWindow::updateDaysCount() {
 
 void MainWindow::updateSickness(LeaveType type) {
 
+    if (m_selectedDaysCount < 0) {
+        ui->lbl_errorMessageText->setText(QString("Your choice is really weird, you know? Please choose another date"));
+        return;
+    }
     m_dbManager->refreshLeaveCount();
     int daysAvailable = m_dbManager->getCurrentUser()->leavesCount[type];
     if (daysAvailable >= m_selectedDaysCount) {
