@@ -4,24 +4,34 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql testlib
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Svoboda_team
 TEMPLATE = app
 
+test {
+    TARGET = Svoboda_team_test
+    QT += testlib
+    SOURCES +=\
+        apptests.cpp \
+        dbmanager.cpp
+    HEADERS += apptests.h dbmanager.h
+}
 
-SOURCES += main.cpp\
-    apptests.cpp \
-        mainwindow.cpp \
-    dbmanager.cpp
+app {
+    TARGET = Svoboda_team
+    SOURCES +=\
+    main.cpp \
+            mainwindow.cpp \
+        dbmanager.cpp
 
-HEADERS  += mainwindow.h \
-    apptests.h \
-    dbmanager.h
+    HEADERS  += mainwindow.h \
+        dbmanager.h
 
-FORMS    += mainwindow.ui
+    FORMS    += mainwindow.ui
 
-RESOURCES += \
-    res.qrc
+    RESOURCES += \
+        res.qrc
+}
+
