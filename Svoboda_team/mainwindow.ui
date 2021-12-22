@@ -29,6 +29,7 @@
       </property>
       <property name="font">
        <font>
+        <family>MS Shell Dlg 2</family>
         <pointsize>15</pointsize>
        </font>
       </property>
@@ -49,7 +50,7 @@
         <bool>false</bool>
        </property>
        <property name="styleSheet">
-        <string notr="true">border-image: url(:/images/normal_bg.jpg);</string>
+        <string notr="true">border-image: url(:/images/windows_normal_bg.jpg);</string>
        </property>
        <attribute name="title">
         <string>Authorization</string>
@@ -125,6 +126,7 @@
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -161,6 +163,7 @@
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -168,7 +171,8 @@
              <bool>false</bool>
             </property>
             <property name="styleSheet">
-             <string notr="true">border-image: url();</string>
+             <string notr="true">border-image: url();
+color: rgb(36, 36, 36);</string>
             </property>
             <property name="text">
              <string>Please, input your username to log in</string>
@@ -191,6 +195,7 @@
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -211,6 +216,7 @@
          <widget class="QLabel" name="lbl_error">
           <property name="font">
            <font>
+            <family>MS Shell Dlg 2</family>
             <pointsize>15</pointsize>
            </font>
           </property>
@@ -341,6 +347,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -371,6 +378,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -421,6 +429,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -451,6 +460,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -485,6 +495,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -515,6 +526,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -565,6 +577,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -595,6 +608,7 @@ color: rgb(255, 0, 0);</string>
                 </property>
                 <property name="font">
                  <font>
+                  <family>MS Shell Dlg 2</family>
                   <pointsize>15</pointsize>
                  </font>
                 </property>
@@ -724,6 +738,7 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -748,6 +763,7 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>15</pointsize>
              </font>
             </property>
@@ -761,6 +777,12 @@ color: rgb(255, 0, 0);</string>
           </item>
           <item row="1" column="0" rowspan="6">
            <widget class="QCalendarWidget" name="calendar_startDate">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
             <property name="firstDayOfWeek">
              <enum>Qt::Monday</enum>
             </property>
@@ -784,6 +806,7 @@ color: rgb(255, 0, 0);</string>
               </property>
               <property name="font">
                <font>
+                <family>MS Shell Dlg 2</family>
                 <pointsize>15</pointsize>
                </font>
               </property>
@@ -799,6 +822,7 @@ color: rgb(255, 0, 0);</string>
              <widget class="QLabel" name="lbl_daysSelectedCount">
               <property name="font">
                <font>
+                <family>MS Shell Dlg 2</family>
                 <pointsize>15</pointsize>
                </font>
               </property>
@@ -811,6 +835,12 @@ color: rgb(255, 0, 0);</string>
           </item>
           <item row="1" column="1" rowspan="6">
            <widget class="QCalendarWidget" name="calendar_endDate">
+            <property name="font">
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
             <property name="firstDayOfWeek">
              <enum>Qt::Monday</enum>
             </property>
@@ -829,6 +859,7 @@ color: rgb(255, 0, 0);</string>
            <widget class="QPushButton" name="btn_req70PctSickness">
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -853,6 +884,7 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -865,6 +897,7 @@ color: rgb(255, 0, 0);</string>
            <widget class="QPushButton" name="btn_reqUnpaidAbsence">
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -889,6 +922,7 @@ color: rgb(255, 0, 0);</string>
             </property>
             <property name="font">
              <font>
+              <family>MS Shell Dlg 2</family>
               <pointsize>13</pointsize>
              </font>
             </property>
@@ -954,6 +988,7 @@ color: rgb(255, 0, 0);</string>
           </property>
           <property name="font">
            <font>
+            <family>MS Shell Dlg 2</family>
             <pointsize>13</pointsize>
            </font>
           </property>
@@ -977,7 +1012,7 @@ color: rgb(255, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>1104</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuActions">
