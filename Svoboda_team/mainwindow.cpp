@@ -15,7 +15,7 @@ void MainWindow::setupMenuBar() {
 
     actionGroup = new QActionGroup(this);
     actionGroup->setExclusive(true);
-    ui->menuTheme->actions().first()->setChecked(true);
+    ui->menuTheme->actions().value(0)->setChecked(true);
     for (int i = 0; i < ui->menuTheme->actions().size(); ++i) {
         actionGroup->addAction(ui->menuTheme->actions()[i]);
     }
