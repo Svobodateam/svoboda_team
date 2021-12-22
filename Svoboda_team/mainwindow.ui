@@ -641,7 +641,7 @@ color: rgb(255, 0, 0);</string>
            </widget>
           </item>
           <item row="1" column="0" rowspan="3">
-           <widget class="QCalendarWidget" name="calendarWidget">
+           <widget class="QCalendarWidget" name="calendar_endDate">
             <property name="gridVisible">
              <bool>true</bool>
             </property>
@@ -654,7 +654,7 @@ color: rgb(255, 0, 0);</string>
            </widget>
           </item>
           <item row="0" column="0">
-           <widget class="QLabel" name="label">
+           <widget class="QLabel" name="lbl_startDate">
             <property name="minimumSize">
              <size>
               <width>0</width>
