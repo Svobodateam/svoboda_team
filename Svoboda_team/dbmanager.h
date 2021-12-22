@@ -37,6 +37,7 @@ public:
     bool updateLeaveCount(LeaveType, int);
     User* getCurrentUser();
     void setCurrentUser(User*);
+    bool getSessionActive();
     void endSession();
     QString leaveTypeToStr(LeaveType);
     bool authorizeUser(User*);

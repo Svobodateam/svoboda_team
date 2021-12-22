@@ -18,6 +18,7 @@ private slots:
     void setCurrentUserTest();
     void updateLeaveCountTest();
     void retrieveLeaveCountTest();
+    void testSessionActive();
 };
 
 #endif // APPTESTS_H
