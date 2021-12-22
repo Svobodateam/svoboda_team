@@ -614,8 +614,71 @@ color: rgb(255, 0, 0);</string>
           </property>
          </spacer>
         </item>
+        <item row="3" column="1">
+         <spacer name="spacer_bottomBaseRequest">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>414</width>
+            <height>222</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <spacer name="spacer_leftBaseRequest">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>74</width>
+            <height>80</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item row="1" column="1" rowspan="2">
-         <layout class="QGridLayout" name="gridLayout">
+         <layout class="QGridLayout" name="grid_baseRequest">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="btn_reqAbsence">
+            <property name="minimumSize">
+             <size>
+              <width>180</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Request Absence</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" rowspan="3">
+           <widget class="QCalendarWidget" name="calendar_endDate">
+            <property name="gridVisible">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QCalendarWidget::SingleSelection</enum>
+            </property>
+            <property name="verticalHeaderFormat">
+             <enum>QCalendarWidget::NoVerticalHeader</enum>
+            </property>
+           </widget>
+          </item>
           <item row="0" column="1">
            <widget class="QLabel" name="lbl_endDate">
             <property name="minimumSize">
@@ -640,13 +703,16 @@ color: rgb(255, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="0" rowspan="3">
-           <widget class="QCalendarWidget" name="calendar_endDate">
+          <item row="1" column="1" rowspan="3">
+           <widget class="QCalendarWidget" name="calendar_startDate">
+            <property name="firstDayOfWeek">
+             <enum>Qt::Monday</enum>
+            </property>
             <property name="gridVisible">
              <bool>true</bool>
             </property>
             <property name="selectionMode">
-             <enum>QCalendarWidget::NoSelection</enum>
+             <enum>QCalendarWidget::SingleSelection</enum>
             </property>
             <property name="verticalHeaderFormat">
              <enum>QCalendarWidget::NoVerticalHeader</enum>
@@ -677,46 +743,6 @@ color: rgb(255, 0, 0);</string>
             </property>
            </widget>
           </item>
-          <item row="1" column="1" rowspan="3">
-           <widget class="QCalendarWidget" name="calendar_startDate">
-            <property name="firstDayOfWeek">
-             <enum>Qt::Monday</enum>
-            </property>
-            <property name="gridVisible">
-             <bool>true</bool>
-            </property>
-            <property name="selectionMode">
-             <enum>QCalendarWidget::NoSelection</enum>
-            </property>
-            <property name="verticalHeaderFormat">
-             <enum>QCalendarWidget::NoVerticalHeader</enum>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QPushButton" name="btn_reqAbsence">
-            <property name="minimumSize">
-             <size>
-              <width>180</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>180</width>
-              <height>35</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>15</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Request Absence</string>
-            </property>
-           </widget>
-          </item>
           <item row="2" column="2">
            <widget class="QPushButton" name="btn_reqSickness">
             <property name="minimumSize">
@@ -741,6 +767,34 @@ color: rgb(255, 0, 0);</string>
             </property>
            </widget>
           </item>
+          <item row="3" column="2">
+           <layout class="QHBoxLayout" name="horiz_daysCount">
+            <item>
+             <widget class="QLabel" name="lbl_daysSelected">
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Days selected:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lbl_daysSelectedCount">
+              <property name="font">
+               <font>
+                <pointsize>15</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
          </layout>
         </item>
         <item row="1" column="2">
@@ -752,32 +806,6 @@ color: rgb(255, 0, 0);</string>
            <size>
             <width>75</width>
             <height>80</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="2" column="0">
-         <spacer name="spacer_leftBaseRequest">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>74</width>
-            <height>80</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="3" column="1">
-         <spacer name="spacer_bottomBaseRequest">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>414</width>
-            <height>222</height>
            </size>
           </property>
          </spacer>
