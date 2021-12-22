@@ -617,7 +617,7 @@ color: rgb(255, 0, 0);</string>
         <item row="1" column="1" rowspan="2">
          <layout class="QGridLayout" name="gridLayout">
           <item row="0" column="1">
-           <widget class="QLabel" name="label_2">
+           <widget class="QLabel" name="lbl_endDate">
             <property name="minimumSize">
              <size>
               <width>0</width>
