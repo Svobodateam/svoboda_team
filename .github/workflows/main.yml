@@ -34,7 +34,7 @@ jobs:
           arch: "win64_mingw73"
           dir: "${{github.workspace}}/qt/"
           install-deps: "true"
-
+          
       - name: Build project
         run: |
           cd ${{github.workspace}}/qt/5.12.11/
