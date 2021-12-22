@@ -36,5 +36,6 @@ jobs:
           install-deps: "true"
 
       - name: Build project
-        run: cd ${{github.workspace}}/qt/5.12.11/
-        run: dir
+        run: |
+          cd ${{github.workspace}}/qt/5.12.11/
+          dir
