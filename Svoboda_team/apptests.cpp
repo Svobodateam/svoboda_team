@@ -58,10 +58,10 @@ void AppTests::retrieveLeaveCountTest()
     m_dbManager->authorizeUser("userivan");
     QMap<LeaveType, int> tmpLeave = m_dbManager->retrieveLeaveCount();
 
-    QCOMPARE(m_dbManager->getCurrentUser()->userName, "userivan");
-    QCOMPARE(m_dbManager->getCurrentUser()->firstName, "Ivan");
-    QCOMPARE(m_dbManager->getCurrentUser()->lastName, "Ivanov");
-    QCOMPARE(m_dbManager->getCurrentUser()->role, "designer");
+    QVERIFY(tmpLeave[Vacation]);
+    QVERIFY(tmpLeave[UnpaidVacation]);
+    QVERIFY(tmpLeave[Sickness75]);
+    QVERIFY(tmpLeave[Sickness100]);
 }
 
 void AppTests::testSessionActive() {
