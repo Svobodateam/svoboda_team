@@ -31,15 +31,28 @@ private slots:
 
     void on_tab_base_currentChanged(int index);
 
+    void on_actionLogin_triggered();
+
+    void on_actionLogout_triggered();
+
+    void on_calendar_endDate_selectionChanged();
+
+    void on_calendar_startDate_selectionChanged();
+
+    void on_btn_reqAbsence_clicked();
+
 private:
     DBManager* m_dbManager;
     Ui::MainWindow *ui;
     QActionGroup *actionGroup;
     QVector<QWidget*> m_hiddenTabs;
+    int m_selectedDaysCount;
 
     void setupMenuBar();
     void fillTextEdits();
     void authSuccessful();
+    void showLoginScreen();
+    void updateDaysCount();
 };
 
 #endif // MAINWINDOW_H
