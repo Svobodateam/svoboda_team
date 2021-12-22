@@ -13,7 +13,7 @@ public:
 private:
     DBManager* m_dbManager;
 private slots:
-
+    void authTest();
 };
 
 #endif // APPTESTS_H
