@@ -67,6 +67,7 @@ void MainWindow::fillTextEdits() {
 void MainWindow::authSuccessful() {
 
     ui->edit_username->clear();
+    ui->lbl_error->clear();
 
     ui->actionLogin->setVisible(false);
     ui->actionLogout->setVisible(true);
@@ -179,5 +180,12 @@ void MainWindow::on_btn_reqSickness_clicked() {
 void MainWindow::on_btn_req70PctSickness_clicked() {
 
     updateSickness(LeaveType::Sickness75);
+}
+
+void MainWindow::keyPressEvent(QKeyEvent *event) {
+
+    if (event->key() == Qt::Key_Return) {
+        ui->btn_login->click();
+    }
 }
 

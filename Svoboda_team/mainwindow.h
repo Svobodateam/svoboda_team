@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QDebug>
 #include <QActionGroup>
+#include <QKeyEvent>
 
 #include "dbmanager.h"
 
@@ -46,6 +47,9 @@ private slots:
     void on_btn_reqSickness_clicked();
 
     void on_btn_req70PctSickness_clicked();
+
+protected:
+    void keyPressEvent(QKeyEvent *event);
 
 private:
     DBManager* m_dbManager;
