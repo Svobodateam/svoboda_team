@@ -1,9 +1,10 @@
 <RCC>
     <qresource prefix="/themes">
-        <file>Diffnes.qss</file>
-        <file>Medize.qss</file>
+        <file>diffnes.qss</file>
+        <file>medize.qss</file>
     </qresource>
     <qresource prefix="/images">
         <file>svoboda.jpg</file>
+        <file>windows_bg.jpg</file>
     </qresource>
 </RCC>
