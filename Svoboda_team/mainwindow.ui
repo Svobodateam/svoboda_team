@@ -849,7 +849,7 @@ color: rgb(255, 0, 0);</string>
    </property>
    <widget class="QMenu" name="menuActions">
     <property name="title">
-     <string>Actions</string>
+     <string>Menu</string>
     </property>
     <widget class="QMenu" name="menuTheme">
      <property name="title">
@@ -859,6 +859,8 @@ color: rgb(255, 0, 0);</string>
      <addaction name="actionMedize"/>
     </widget>
     <addaction name="menuTheme"/>
+    <addaction name="actionLogin"/>
+    <addaction name="actionLogout"/>
    </widget>
    <addaction name="menuActions"/>
   </widget>
@@ -888,6 +890,16 @@ color: rgb(255, 0, 0);</string>
    </property>
    <property name="toolTip">
     <string>Medize</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
    </property>
   </action>
  </widget>
